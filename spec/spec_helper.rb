@@ -1,0 +1,1 @@
+require 'chromatic_scale'
