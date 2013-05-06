@@ -7,10 +7,11 @@ class ChromaticScale
   end
 
   def note_for_number number, mode = :ascending
+    index = (number*2)%12
     if mode == :ascending
-      @ascending_scale[number*2]
+      @ascending_scale[index]
     else
-      @descending_scale[number*2]
+      @descending_scale[index]
     end
   end
 end
