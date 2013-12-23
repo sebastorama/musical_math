@@ -8,7 +8,8 @@ class Note
   end
 
   def + other
-    self.class.new(@ascending_scale[value+other])
+    other = (other * 2).to_i
+    self.class.new(@ascending_scale[(value+other)%12])
   end
 
   def name
